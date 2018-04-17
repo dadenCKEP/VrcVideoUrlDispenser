@@ -11,7 +11,7 @@ VrChatのコンポーネント、VRC_SyncVideoPlayerのUrlリストにボタン1
 ### 手順
 1. Youtube List Grabberで、YouTubeのプレイリストUrlを取得します。
 取得したいプレイリストを開きます。
-![PlayList.png](\:storage\0.4cobxfmfj4b.png)
+![playlist](https://user-images.githubusercontent.com/38412381/38888836-c46966d2-42b7-11e8-963a-aab260ee207b.png)
 プレイリストの一番上の動画をクリックした後に、以下のようなプレイリストのUrlをコピーします。(途中省略しています)
 ```
 https://www.youtube.com/watch?v=cqn～8Es&list=PLl～Jnd&index=1
@@ -19,17 +19,17 @@ https://www.youtube.com/watch?v=cqn～8Es&list=PLl～Jnd&index=1
 Youtube List Grabberを起動して、UrlをList Urlに貼り付け、Grab!ボタンを押して動画リストを取得します。
 (上手くいかない場合は、Grab!ボタンを3回くらい押してみたり、Youtube List Grabberを再起動してみてください。)
 再生リストが表示されたら、右クリックからSaveを選択してください。
-![Youtube List Grabber.png](\:storage\0.5qncd3s9cy9.png)
+![youtubelistgrabber](https://user-images.githubusercontent.com/38412381/38888901-f65300b8-42b7-11e8-99da-e72a467f8cc7.png)
 Youtube List Grabberと同じフォルダーに、YouList.txtが出力されます。
 この中にUrlリストが入っています。
 
 2. UnityPackageからインポート
 Assets/Import Package/Custom PackageからVrcVideoUrlDispenserをインポートしてください。
-![CustomPackage.png](\:storage\0.94j34yvzpg.png)
+![custompackage](https://user-images.githubusercontent.com/38412381/38888925-07582582-42b8-11e8-8ca9-bb38ddfb54f8.png)
 
 3. UrlをSyncVideoPlayerへ適用する
 VRC_SyncVideoPlayerのコンポーネントが付いているGameObjectでAddComponentを押して、VrcVideoUrlDispenserを追加します。
-![AddComponent.png](\:storage\0.9tgyhco3sup.png)
+![addcomponent](https://user-images.githubusercontent.com/38412381/38888946-147f3a52-42b8-11e8-81be-9f5e4be8790a.png)
 1.で作ったYouList.txtからUrlをコピーして、UrlListの中にCtrl + VでUrlを貼りつけます。
 (TextAreaにUrlを貼り付ける時、キー認識が鈍いみたいなので、しっかり押して下さい。)
 Startボタンを押します。
