@@ -3,6 +3,8 @@
 ## これ何？
 VrChatのコンポーネント、VRC_SyncVideoPlayerのUrlリストにボタン1つでUrlリストを分配するコンポーネントです。
 
+![image](https://user-images.githubusercontent.com/38412381/38889696-69a0d5a2-42ba-11e8-8955-f1bccaaccb3a.gif)
+
 ## YouTubeのプレイリストをSyncVideoPlayerに入れる
 ### 必要なもの
 あらかじめ、以下のソフトをダウンロードしてください。
