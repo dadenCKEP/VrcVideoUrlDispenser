@@ -39,7 +39,7 @@ VRC_SyncVideoPlayerのコンポーネントが付いているGameObjectでAddCom
 
 ![addcomponent](https://user-images.githubusercontent.com/38412381/38888946-147f3a52-42b8-11e8-81be-9f5e4be8790a.png)
 
-1.で作ったYouList.txtからUrlをコピーして、UrlListの中にCtrl + VでUrlを貼りつけます。
+手順1で作ったYouList.txtからUrlをコピーして、UrlListの中にCtrl + VでUrlを貼りつけます。
 (TextAreaにUrlを貼り付ける時、キー認識が鈍いみたいなので、しっかり押して下さい。)
 Startボタンを押します。
 そのままVrChatへアップロードできるように、Url配置に成功するとコンポーネントは自動的に消えます。
