@@ -20,13 +20,13 @@ VrChatのコンポーネント、VRC_SyncVideoPlayerのUrlリストにボタン1
 ```
 https://www.youtube.com/watch?v=cqn～8Es&list=PLl～Jnd&index=1
 ```
-Youtube List Grabberを起動して、UrlをList Urlに貼り付け、Grab!ボタンを押して動画リストを取得します。
-(上手くいかない場合は、Grab!ボタンを3回くらい押してみたり、Youtube List Grabberを再起動してみてください。)
-再生リストが表示されたら、右クリックからSaveを選択してください。
+Youtube List Grabberを起動して、UrlをList Urlに貼り付け、Grab!ボタンを押して動画リストを取得します。  
+(上手くいかない場合は、Grab!ボタンを3回くらい押してみたり、Youtube List Grabberを再起動してみてください。)  
+再生リストが表示されたら、右クリックからSaveを選択してください。  
 
 ![youtubelistgrabber](https://user-images.githubusercontent.com/38412381/38888901-f65300b8-42b7-11e8-99da-e72a467f8cc7.png)
 
-Youtube List Grabberと同じフォルダーに、YouList.txtが出力されます。
+Youtube List Grabberと同じフォルダーに、YouList.txtが出力されます。  
 この中にUrlリストが入っています。
 
 2. UnityPackageからインポート
@@ -39,18 +39,18 @@ VRC_SyncVideoPlayerのコンポーネントが付いているGameObjectでAddCom
 
 ![addcomponent](https://user-images.githubusercontent.com/38412381/38888946-147f3a52-42b8-11e8-81be-9f5e4be8790a.png)
 
-手順1で作ったYouList.txtからUrlをコピーして、UrlListの中にCtrl + VでUrlを貼りつけます。
-(TextAreaにUrlを貼り付ける時、キー認識が鈍いみたいなので、しっかり押して下さい。)
-Startボタンを押します。
-そのままVrChatへアップロードできるように、Url配置に成功するとコンポーネントは自動的に消えます。
-IndexOutOfRangeExceptionというエラーが出るかもしれませんが、成功ログが出てくれば配置されています。
+手順1で作ったYouList.txtからUrlをコピーして、UrlListの中にCtrl + VでUrlを貼りつけます。  
+(TextAreaにUrlを貼り付ける時、キー認識が鈍いみたいなので、しっかり押して下さい。)  
+Startボタンを押します。  
+そのままVrChatへアップロードできるように、Url配置に成功するとコンポーネントは自動的に消えます。  
+IndexOutOfRangeExceptionというエラーが出るかもしれませんが、成功ログが出てくれば配置されています。  
 Urlが入っている事を確認できれば終わりです！
 
 ## VrChat既存の問題
 ### 特定の動画で大音量の雑音が流れる
-VrChatでYouTubeの動画を流す際、大音量の雑音が流れる場合があります。
-これは、どうやら動画サイズの問題で、HDサイズ以上を指定すれば回避できるようです。(はっか調べ)
-YouTubeだと、フィルタ → 特徴 → HDからHD動画を検索できます。また、動画再生中に動画を右クリック → 詳細統計情報 → Current / Optimal Resで動画サイズを調べることができます。
+VrChatでYouTubeの動画を流す際、大音量の雑音が流れる場合があります。  
+これは、どうやら動画サイズの問題で、HDサイズ以上を指定すれば回避できるようです。(はっか調べ)  
+YouTubeだと、フィルタ → 特徴 → HDからHD動画を検索できます。また、動画再生中に動画を右クリック → 詳細統計情報 → Current / Optimal Resで動画サイズを調べることができます。  
 参考までに、私が調べた動画のサンプルデータを下に記載しておきます。(コーデックは調べたものだけ記載)
 
 | VrChatで再生可能か | Current / Optimal Res | Codecs(WinDesktop) | Codecs(MacBook) |
